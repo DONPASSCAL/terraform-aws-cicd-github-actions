@@ -6,10 +6,10 @@ provider "aws" {
 # If not, comment the following lines
 terraform {
   backend "s3" {
-    bucket         = "terraform-tfstate-playingaws-poc"     # Update it 
+    bucket         = "devsecops1-terraform-bucket"     # Update it 
     key            = "poc/terraform-github-actions.tfstate" # Update it
-    region         = "eu-west-1"                            # Update it
-    dynamodb_table = "terraform-lock"                       # Update it
+    region         = "us-east-2"                            # Update it
+    dynamodb_table = "terraform-locks"                       # Update it
     encrypt        = true
   }
 }
