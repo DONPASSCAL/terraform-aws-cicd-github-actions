@@ -40,5 +40,5 @@ jobs:
         run: terraform apply -auto-approve
 
       # Destroy terraform resources (uncomment lines below)
-      # - name: Terraform Destroy
-      #   run: terraform destroy -auto-approve
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
